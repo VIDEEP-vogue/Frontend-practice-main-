@@ -117,6 +117,34 @@ li::marker {
     color: chartreuse;
 }
 
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin:  20px;
+}
+
+.skill-card {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid hotpink;
+    padding: 20px;
+    
+}
+
+.skill-card h3 {
+    color: chartreuse;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.skill-card p {
+    color: white;
+}
+
+
 .project {
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(255, 254, 254);
