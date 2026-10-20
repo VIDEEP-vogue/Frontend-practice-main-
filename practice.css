@@ -262,3 +262,32 @@ footer {
 #greet-button:hover {
     background-color: chartreuse;
 }
+
+
+
+#name-input {
+    display: inline-block;
+    margin: auto;
+    padding: 20px;
+    font-size: 18px;
+    background-color: black;
+    color: chartreuse;
+    border: 2px solid chartreuse;
+}
+
+#welcome-button {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-color: hotpink;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#welcome-message {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chartreuse;
+    font-size: 40px;
+}
