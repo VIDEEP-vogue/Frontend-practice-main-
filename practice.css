@@ -239,3 +239,26 @@ footer {
     font-size: 14px;
     text-align: center;
 }
+
+#greeting {
+    color: chartreuse;
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#greet-button {
+    display: block;
+    background-color: hotpink;
+    color: black;
+    padding: 18px 40px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#greet-button:hover {
+    background-color: chartreuse;
+}
