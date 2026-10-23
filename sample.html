@@ -1,157 +1,260 @@
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Videep's Portfolio</title>
-    <link rel="stylesheet" href="practice.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="draft.js" defer></script>
+    <title>Videep's Portfolio</title>
+
+    <link rel="stylesheet" href="practice.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <h2>Videep's Portfolio</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <h2>Videep Ramaswamy MS<span>.</span></h2>
 
-    <main>
-        <section id="home" class="home">
-            <h4>Welcome</h4>
-            <h1>I'm Videep Ramaswamy MS.</h1> 
-            <p>I'm an <strong>11th-grade student</strong> interested in technology,
-                <em>public speaking and creative projects.</em>
+        <div>
+            <a href="#about">About</a>
+            <a href="#interests">Interests</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <section class="home" id="home">
+
+
+        <h1>HI, I'M <span style="letter-spacing: 35px;">VIDEEP</span></h1>
+
+        <h2 class="handwriting" style="font-size: 50px; letter-spacing: 3px; text-align: center;">Ramswamy MS</h2>
+
+        <p class="intro" style="text-align: center;">
+            Student, beginner coder, and someone who's always
+            looking for something new to learn. Music, art and nature
+            is my comfort zone.
+        </p>
+
+        <a href="#about" class="link">A LITTLE ABOUT ME ↓</a>
+
+    </section>
+
+
+   
+
+    <section class="about section" id="about">
+
+        <div class="about-text">
+            <p class="small-text">A LITTLE INTRODUCTION</p>
+
+            <h2>So, who am I?</h2>
+
+            <p>
+                I'm Videep, an 11th-grade student at CS Academy.
+                I'm interested in technology, science, public speaking,
+                and pretty much anything that lets me learn something new.
             </p>
-        </section>
 
-        <p id="greeting">Welcome to my page!</p>
-        <button id="greet-button" type="button">Say Hello</button>       
-        <label for="name-input" style="text-align: center; font-size: 25px;">Enter your name</label>
-        <input id="name-input" type="text">
-        <button id="welcome-button" type="button">Greet Me</button>
-        <p id="welcome-message"></p>
+            <p>
+                Outside academics, you'll probably find me at an MUN,
+                practising archery, or sketching something.
+                I'm also learning HTML and CSS and figuring out how to
+                turn my ideas into actual websites.
+            </p>
 
-        <section id="about">
-            <h2>About Me</h2>
+        </div>
 
-            <div class="about">
-                <figure>
-                    <img class="videep" src="C:\Users\DELL\Downloads\IMG_6997.jpeg" alt="my photo" style="border: radius 50%;;">
-                    <figcaption>Videep Ramaswamy MS</figcaption>
-                </figure>
 
+        <div class="collage">
+
+            <img class="photo photo-one"
+                 src="C:\Users\DELL\Downloads\IMG_7055.jpeg"
+                 alt="A photo of me">
+
+            <img class="photo photo-two"
+                 src="C:\Users\DELL\Downloads\cda2d2d6-b882-424e-8bbf-c74658c7dd9e.jpeg"
+                 alt="A photo from MUN">
+
+            <video class="my-video" autoplay muted loop playsinline>
+                <source src="videos/TRUEFOREST.mp4" type="video/mp4">
+                Your browser does not support this video.
+            </video>
+
+            <img class="photo photo-three"
+                 src="C:\Users\DELL\Downloads\IMG_6015.jpeg"
+                 alt="My sketching">
+
+            <img class="photo photo-four"
+                 src="C:\Users\DELL\Downloads\5aaa4a1c-a367-42df-93e8-dda4429de65d.jpeg"
+                 alt="Me practising archery">
+
+            <p class="collage-note">bits and pieces of me :)</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERESTS -->
+
+    <section class="section interests" id="interests">
+
+        <p class="small-text">THINGS I LIKE</p>
+
+        <h2>More than just one thing.</h2>
+
+        <div class="interest-list">
+
+            <div class="interest">
+                
                 <div>
+                    <h3>Technology & Science</h3>
                     <p>
-                        I'm studying at <strong>CS Academy</strong> and enjoy exploring<br>
-                        new ideas, learning to code and taking on<br>
-                        challenging experiences. I'm involved in Model<br>
-                        United Nations and <em>enjoy archery and sketching.</em>
+                        Exploring computers, coding, physics,
+                        and how things work.
                     </p>
-
-                    <p>
-                        I'm currently <em>learning HTML and CSS to build</em><br>
-                        websites and bring my ideas to life.
-                    </p>
-
-                    <a href="https://csacademy.in/erode/">
-                        CS Academy Erode website
-                    </a>
                 </div>
             </div>
-        </section>
 
-        <section id="interests">
-            <h2>My Interests</h2>
-            <ul>
-                <li>Web development and technology</li>
-                <li>MUN and public speaking</li>
-                <li>archery, sports and sketching</li>
-                <li>im also readily exploring my interests</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-
-            <div class="project">
-                <h3>Personal Portfolio</h3>
-                <p>A simple website built using HTML and CSS.</p>
+            <div class="interest">
+                
+                <div>
+                    <h3>MUN & Public Speaking</h3>
+                    <p>
+                        Researching issues, debating ideas,
+                        and speaking in front of people.
+                    </p>
+                </div>
             </div>
 
-            <div class="project">
-                <h3>CS GO TO</h3>
-                <p>
-                    A digital platform designed to improve access
-                    to school resources and information.
-                </p>
-                <a href="https://csgoportal-untgrrbb.manus.space">
-                    View project
-                </a>
+            <div class="interest">
+               
+                <div>
+                    <h3>Archery</h3>
+                    <p>
+                        Practising patience, concentration,
+                        and consistency.
+                    </p>
+                </div>
             </div>
-        </section>
 
-        <section id="skills">
-    <h2>My Skills</h2>
+            <div class="interest">
+                
+                <div>
+                    <h3>Sketching</h3>
+                    <p>
+                        Getting creative and turning random
+                        ideas into something on paper.
+                    </p>
+                </div>
+            </div>
 
-    <div class="skills-container">
-
-        <div class="skill-card">
-            <h3>Archery</h3>
-            <p><br><br>I do competitive archery. I find peace and happiness with every arrow I aim and shoot.
-                        I've represented our Archery academy in zonal, district and even won gold in State level.</p>
         </div>
 
-        <div class="skill-card">
-            <h3>Public speaking</h3>
-            <p><br><br>I love public speaking and open debates. Speaking is when an individual becomes broad minded and 
-                        begins to communicate, interpret and criticise. Public speaking has been the driving force
-                        in all pivotal points in human history, maybe thats why I like public speaking.</p>
+    </section>
+
+
+  
+
+    <section class="section projects" id="projects">
+
+        <p class="small-text">THINGS I'M WORKING ON</p>
+
+        <h2>My projects.</h2>
+
+        <div class="project-box">
+            <h3>My Personal Portfolio</h3>
+
+            <p>
+                This website is one of my first steps into web development.
+                I'm using HTML, CSS, and JavaScript to build something
+                that represents me.
+            </p>
+
+            <span class="project-tag">HTML · CSS · JAVASCRIPT</span>
         </div>
 
-        <div class="skill-card">
-            <h3>Sketching/Art</h3>
-            <p><br><br>I love to sketch and doodle whenever im free. Art is your visual voice. Just like public speaking, sketching lets you observe, critique, 
-                        and shape the world around you, turning silent ideas into powerful stories that speak volumes 
-                        without saying a word.</p>
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="section skills" id="skills">
+
+        <p class="small-text">WHAT I'M LEARNING</p>
+
+        <h2>A few things I do.</h2>
+
+        <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Public Speaking</span>
+            <span>Research</span>
+            <span>Archery</span>
+            <span>Sketching</span>
+            <span>Creative Thinking</span>
+            <span>Competitive Skating</span>
         </div>
-    </div>
-            </section>
-        
-<section id="contact">
-    <h2>Contact Me</h2>
 
-    <p>Have a question or want to connect? Send me a message.</p>
+    </section>
 
-    <form>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name"
-               placeholder="Enter your name" required>
+    <section class="section contact" id="contact">
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email"
-               placeholder="Enter your email" required>
+        <p class="small-text">GOT SOMETHING TO SAY?</p>
 
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message"
-                  placeholder="Write your message here"
-                  rows="5" required></textarea>
+        <h2>Let's talk<span>.</span></h2>
 
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+        <p class="contact-intro">
+            Have an idea, want to collaborate, or just want to say hi?
+            HIT ME UP!!!
+        </p>
 
-    </main>
+        <form id="contact-form">
+
+            <label for="name">Your name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="What should I call you?"
+                required
+            >
+
+            <label for="email">Your email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+            >
+
+            <label for="message">Your message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write something..."
+                required
+            ></textarea>
+
+            <button type="submit">Send message ↗</button>
+
+            <p id="form-feedback" aria-live="polite"></p>
+
+        </form>
+
+    </section>
+
 
     <footer>
-        <p>********************************************</p>
+        <p>Made by Videep, fueled by cold coffee.</p>
+        <a href="#home">Back to top ↑</a>
     </footer>
-<script src="practice.js" defer></script>
+
+
+    <script src="draft.js"></script>
+
 </body>
 </html>

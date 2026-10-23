@@ -1,26 +1,31 @@
-const studentName = "Videep";
 
-const greeting = document.querySelector("#greeting");
-const greetButton = document.querySelector("#greet-button");
+const form = document.getElementById("contact-form");
+const feedback = document.getElementById("form-feedback");
 
-function sayHello() {
-    greeting.textContent = "Hello! I am " + studentName + " :)";
-}
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-greetButton.addEventListener("click", sayHello);
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-const nameInput = document.querySelector("#name-input");
-const welcomeButton = document.querySelector("#welcome-button");
-const welcomeMessage = document.querySelector("#welcome-message");
-
-function greetVisitor() {
-    const visitorName = nameInput.value.trim();
-
-    if (visitorName === "") {
-        welcomeMessage.textContent = "Enter your name first!";
-    } else {
-        welcomeMessage.textContent = "Welcome, " + visitorName + "!";
+    if (name === "" || email === "" || message === "") {
+        feedback.textContent = "Please fill in all the boxes.";
+        return;
     }
-}
 
-welcomeButton.addEventListener("click", greetVisitor);
+    const subject = encodeURIComponent("Portfolio message from " + name);
+
+    const body = encodeURIComponent(
+        "Name: " + name +
+        "\nEmail: " + email +
+        "\n\nMessage:\n" + message
+    );
+
+    feedback.textContent =
+        "Opening your email app so you can send your message...";
+
+    window.location.href =
+        "mailto:vid3ep@gmail.com?subject=" + subject +
+        "&body=" + body;
+});
